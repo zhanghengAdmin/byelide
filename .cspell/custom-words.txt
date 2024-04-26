@@ -1,5 +1,8 @@
+byelide
 conventionalcommits
+nightwatch
 pinia
 rushstack
 stylelint
+tsbuildinfo
 vuejs
