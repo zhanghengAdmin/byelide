@@ -22,7 +22,9 @@
   "dependencies": {
     "pinia": "2.1.7",
     "vue": "3.4.25",
-    "vue-router": "4.3.2"
+    "vue-router": "4.3.2",
+    "@icon-park/vue-next": "1.4.2",
+    "smooth-dnd": "0.12.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "1.10.2",
@@ -33,24 +35,25 @@
     "@vue/eslint-config-prettier": "9.0.0",
     "@vue/eslint-config-typescript": "^11.0.3",
     "@vue/tsconfig": "0.5.1",
+    "conventional-changelog-conventionalcommits": "7.0.2",
+    "cspell": "7.3.9",
     "cypress": "13.8.1",
     "eslint": "9.1.1",
     "eslint-plugin-cypress": "2.15.2",
     "eslint-plugin-vue": "9.25.0",
+    "husky": "9.0.11",
+    "less": "^4.2.0",
     "npm-run-all2": "6.1.2",
     "prettier": "3.2.5",
     "start-server-and-test": "2.0.3",
+    "stylelint": "16.4.0",
+    "stylelint-config-html": "1.1.0",
+    "stylelint-config-prettier": "9.0.5",
+    "stylelint-config-standard": "36.0.0",
+    "stylelint-config-vue": "1.0.0",
     "typescript": "5.4.5",
     "vite": "5.2.10",
     "vite-plugin-vue-devtools": "7.1.2",
-    "vue-tsc": "2.0.14",
-    "cspell": "7.3.9",
-    "husky": "9.0.11",
-    "stylelint": "16.4.0",
-    "stylelint-config-standard": "36.0.0",
-    "stylelint-config-prettier": "9.0.5",
-    "stylelint-config-html": "1.1.0",
-    "stylelint-config-vue": "1.0.0",
-    "conventional-changelog-conventionalcommits": "7.0.2"
+    "vue-tsc": "2.0.14"
   }
 }
