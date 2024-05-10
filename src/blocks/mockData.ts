@@ -8,6 +8,6 @@ export const myBlocks: Block[] = [
     {
         id: '2',
         type: 'image',
-        props: { src: 'https://www.baidu.com/' }
+        props: { src: 'https://images.pexels.com/photos/2577274/pexels-photo-2577274.jpeg?auto=compress&cs=tinysrgb&w=1600' }
     },
 ]

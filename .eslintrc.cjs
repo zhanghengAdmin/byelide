@@ -11,10 +11,12 @@ module.exports = {
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off', // 开发环境不能使用console
-    'no-debugger': 'off', // 允许debugger
-    '@typescript-eslint/no-explicit-any': 'error' // 不允许在ts中使用any     官网：https://typescript-eslint.io/rules/
+    'no-debugger': 'error', // 允许debugger
+    // '@typescript-eslint/no-explicit-any': 'error', // 不允许在ts中使用any     官网：https://typescript-eslint.io/rules/
     // 'no-unused-vars': 'error' // vue中也提供了相应配置：https://eslint.vuejs.org/ 	【eslint-plugin-vue】
+    'simple-import-sort/imports':'error', // 组件导入按照顺序排列（第三方库放在上面，其他组件有序放在下面）   可以在awesome-eslint中查看更多插件
   },
+  "plugins": ["simple-import-sort"],
   overrides: [
     {
       files: [

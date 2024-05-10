@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia';
+
 import { useCountStore } from '@/stores/counter'
 import { useEnvStore } from '@/stores/debug'
-import { storeToRefs } from 'pinia';
 
 // const { count, increment, decrement, doubleCount } = useCountStore(); // 这样解构会丢掉响应式
 

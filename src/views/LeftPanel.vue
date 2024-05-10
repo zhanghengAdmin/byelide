@@ -6,7 +6,7 @@ import { SmoothDndDraggable } from '@/components/SmoothDnd/SmoothDndDraggable';
     <div>
         <SmoothDndContainer class="divSty" group-name="blocks" tag="div"
             :get-child-payload="(index: number) => index + 1" @drop="(e: any) => console.log('drop---', e)">
-            <SmoothDndDraggable v-for="i in 10" class="numBox">
+            <SmoothDndDraggable v-for="i in 10" class="numBox" :key="i">
                 {{ i }}
             </SmoothDndDraggable>
         </SmoothDndContainer>
