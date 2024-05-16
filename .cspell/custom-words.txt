@@ -1,6 +1,7 @@
 behaviour
 byelide
 conventionalcommits
+mytable
 nightwatch
 pinia
 rushstack

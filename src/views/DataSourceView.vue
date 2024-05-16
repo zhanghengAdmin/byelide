@@ -30,6 +30,10 @@ const envStore = useEnvStore();
     <main :class="{ debug: envStore.debug }" @click="envStore.toggle">
       <p>LayoutView</p>
     </main>
+    <footer>
+      <router-link to="/myTable">去Canvas Table</router-link>
+    </footer>
+
   </div>
 </template>
 <style scoped lang="less">

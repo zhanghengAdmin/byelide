@@ -9,6 +9,11 @@ const router = createRouter({
       redirect: '/app/layout'
     },
     {
+      path: '/myTable',
+      name: 'myTable',
+      component: () => import('../components/CanvasTable/mytable.vue'),
+    },
+    {
       path: '/app',
       name: 'app',
       children: [

@@ -22,8 +22,12 @@ module.exports = {
       files: [
         '**/__tests__/*.{cy,spec}.{js,ts,jsx,tsx}',
         'cypress/e2e/**/*.{cy,spec}.{js,ts,jsx,tsx}',
-        'cypress/support/**/*.{js,ts,jsx,tsx}'
+        'cypress/support/**/*.{js,ts,jsx,tsx}',
+        'src/**/*.vue'
       ],
+      rules: {
+        'vue/multi-word-component-names': 0,
+      },
       extends: ['plugin:cypress/recommended']
     }
   ],
