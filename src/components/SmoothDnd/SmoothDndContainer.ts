@@ -1,6 +1,7 @@
 // 使用smooth-dnd做编排引擎基本拖拽的实现：容器Container，拖拽对象Draggable（拖拽的内容要放到容器中）
-import { dropHandlers, smoothDnD, type SmoothDnD } from "smooth-dnd";
+import { dropHandlers, type SmoothDnD, smoothDnD } from "smooth-dnd";
 import { defineComponent, h } from "vue";
+
 import { getTagProps, validateTagProp } from './utils'
 
 smoothDnD.dropHandler = dropHandlers.reactDropHandler().handler

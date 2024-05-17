@@ -14,5 +14,6 @@
   "compilerOptions": {
     "module": "NodeNext"
   },
-  "suppressImplicitAnyIndexErrors": true
+  "suppressImplicitAnyIndexErrors": true,
+  "include": ["src/icons/"]
 }

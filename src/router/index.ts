@@ -12,6 +12,12 @@ const router = createRouter({
       path: '/myTable',
       name: 'myTable',
       component: () => import('../components/CanvasTable/mytable.vue'),
+      // component: () => import('../components/CanvasTable/bugDemo.vue'),
+    },
+    {
+      path: '/dndDemo',
+      name: 'dndDemo',
+      component: () => import('../components/DndDemo/dndDemo.vue'),
     },
     {
       path: '/app',

@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia';
+import { storeToRefs } from 'pinia'
 
 import { useCountStore } from '@/stores/counter'
 import { useEnvStore } from '@/stores/debug'
 
 // const { count, increment, decrement, doubleCount } = useCountStore(); // 这样解构会丢掉响应式
 
-const store = useCountStore();
+const store = useCountStore()
 
-const { count, doubleCount } = storeToRefs(store); // 为了从 store 中提取属性时保持其响应性，需要使用 storeToRefs()。    【count和doubleCount 是响应式的 ref】
-const { increment, decrement } = store; // // 作为 action 的 increment和decrement 可以直接解构
+const { count, doubleCount } = storeToRefs(store) // 为了从 store 中提取属性时保持其响应性，需要使用 storeToRefs()。    【count和doubleCount 是响应式的 ref】
+const { increment, decrement } = store // // 作为 action 的 increment和decrement 可以直接解构
 
-const envStore = useEnvStore();
+const envStore = useEnvStore()
 </script>
 
 <template>
@@ -20,7 +20,7 @@ const envStore = useEnvStore();
     <button @click="increment">+</button> |
     <button @click="decrement">-</button>
 
-    <hr>
+    <hr />
 
     <nav>
       <p>{{ store.count }}---------{{ store.doubleCount }}</p>
@@ -32,8 +32,9 @@ const envStore = useEnvStore();
     </main>
     <footer>
       <router-link to="/myTable">去Canvas Table</router-link>
+      <br />
+      <router-link to="/dndDemo">去dndDemo</router-link>
     </footer>
-
   </div>
 </template>
 <style scoped lang="less">
