@@ -11,8 +11,8 @@ const router = createRouter({
     {
       path: '/myTable',
       name: 'myTable',
-      component: () => import('../components/CanvasTable/mytable.vue'),
-      // component: () => import('../components/CanvasTable/bugDemo.vue'),
+      // component: () => import('../components/CanvasTable/mytable.vue'),
+      component: () => import('../components/CanvasTable/canvas实现表格3.1（加滚动条）.vue'),
     },
     {
       path: '/dndDemo',
