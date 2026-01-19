@@ -10,6 +10,9 @@ export const useAppEditorStore = defineStore('appEditor', () => {
     const selectBlock = (id: string) => {
         currentBlockId.value = id
     }
+
+    // 需要从currentBlockId 派生 （需要依赖某一个数据，进行加工后，生成新的数据，并且这个新的数据是和他相关联的(新老关联)）
+    // 什么是派生：https://www.cnblogs.com/scx-xiaochun/p/16529282.html
     const selectData = computed(() => {
         return blocks.value.find(v => v.id == currentBlockId.value || null)
     })

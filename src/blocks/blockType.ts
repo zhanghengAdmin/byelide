@@ -1,8 +1,9 @@
+// interface组合比较麻烦，一般使用type
 export type BaseBlock = {
     id: string
     type: string
 }
-
+// & 是 TypeScript 的交叉类型运算符
 export type TextBlock = BaseBlock & {
     type: 'text'
     props: { content: string }
