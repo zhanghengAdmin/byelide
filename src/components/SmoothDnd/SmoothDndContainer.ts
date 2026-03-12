@@ -10,7 +10,7 @@ smoothDnD.wrapChild = false
 type EventKey = 'drag-start' | 'drag-end' | 'drop' | 'drag-enter' | 'drag-leave' | 'drop-ready'
 
 // Record可以为一组固定的属性名创建一个类型。第一个类型参数是属性名的类型（通常是string或number），第二个类型参数是属性值的类型。
-// 抹平API差异，drag-start等这些方法是SmoothDnd中提供的
+// 抹平API差异（为了‌统一调用入口、减少重复代码，将复杂性封装在底层，让开发者聚焦业务本身），drag-start等这些方法是SmoothDnd中提供的
 const eventEmitterMap: Record<EventKey, string> = {
     'drag-start': 'onDragStart',
     'drag-end': 'onDragEnd',
